@@ -4,11 +4,23 @@ console.log('***** Cart Functions *****');
 let basket = [];
 console.log(basket);
 
-function addItem(bees){
-  basket.push(bees);
-  if (basket.includes('bees')) {
-    console.log('bees has been added to the basket array', basket);
+function addItem(item){
+  basket.push(item);
+  if (basket.includes('item')) {
+    console.log('item has been added to the basket array', basket);
     return 'true'
   }
 }
-addItem('bees')
+addItem('item')
+
+
+function listItems(){
+  for( let i = 0; i < basket.length; i++ ){
+    console.log( 'for loop showing contents of basket array: ', basket[i]);
+  }
+}
+listItems()
+
+function empty(){
+  
+}

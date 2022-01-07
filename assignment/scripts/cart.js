@@ -3,3 +3,12 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 let basket = [];
 console.log(basket);
+
+function addItem(bees){
+  basket.push(bees);
+  if (basket.includes('bees')) {
+    console.log('bees has been added to the basket array', basket);
+    return 'true'
+  }
+}
+addItem('bees')

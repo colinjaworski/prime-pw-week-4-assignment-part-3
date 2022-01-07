@@ -22,5 +22,7 @@ function listItems(){
 listItems()
 
 function empty(){
-  
+  basket.length = 0;
 }
+empty()
+console.log('The basket array is now empty', basket);
